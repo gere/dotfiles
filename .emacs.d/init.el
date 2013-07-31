@@ -5,6 +5,7 @@
 ;; -- Global Settings --
 ;; ---------------------
 (add-to-list 'load-path "~/.emacs.d")
+
 (require 'cl)
 (require 'ido)
 (require 'ffap)
@@ -75,3 +76,9 @@
 (require 'jade-mode)    
 (add-to-list 'auto-mode-alist '("\\.styl$" . sws-mode))
 (add-to-list 'auto-mode-alist '("\\.jade$" . jade-mode))
+
+;; ------------------------------
+;; -- Emmet Mode configuration -- 
+;; ------------------------------
+(add-to-list 'load-path "~/emacs.d/emmet-mode")
+(require 'emmet-mode)
