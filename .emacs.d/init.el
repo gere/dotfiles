@@ -87,10 +87,10 @@
 (add-hook 'sgml-mode-hook 'emmet-mode) ;; Auto-start on any markup modes
 (add-hook 'css-mode-hook  'emmet-mode) ;; enable Emmet's css abbreviation.
 (add-hook 'emmet-mode-hook (lambda () (setq emmet-indentation 2))) ;indent 2 spaces.
-(add-hook 'emmet-mode-hook
-          (lambda ()
-            ;; clearing old C-j and C-return key mapping.
-            (define-key emmet-mode-keymap (kbd "C-j")        nil)
-            (define-key emmet-mode-keymap (kbd "<C-return>") nil)
-            ;; define new M-j key mapping instead.
-            (define-key emmet-mode-keymap (kbd "TAB")        'emmet-expand-line)))
+;; (add-hook 'emmet-mode-hook
+;;       (lambda ()
+;; clearing old C-j and C-return key mapping.
+;;          (define-key emmet-mode-keymap (kbd "C-j")        nil)
+;;        (define-key emmet-mode-keymap (kbd "<C-return>") nil)
+;; define new M-j key mapping instead.
+;;      (define-key emmet-mode-keymap (kbd "C-j")        'emmet-expand-line)))
